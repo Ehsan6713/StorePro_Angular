@@ -1,0 +1,12 @@
+@if(model?.invalid && !model?.untouched){
+
+    @if(model?.errors?.['required']){
+        <span class="text-danger">لطفا مقدار فیلد را وارد نمایید</span>
+    }
+    @if(model?.errors?.['minlength']){
+      <span class="text-danger">حداقل مقدار وارد نشده است</span>
+    }
+    @if(model?.errors?.['maxlength']){
+      <span class="text-danger"> مقدار وارد شده از حداکثر قابل قبول بیشتر است</span>
+    }
+    }

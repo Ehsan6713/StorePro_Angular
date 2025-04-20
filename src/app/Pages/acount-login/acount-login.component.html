@@ -1,0 +1,23 @@
+<div class="login-container">
+    <div class="login-header">
+        <h2>ورود به سیستم</h2>
+    </div>
+    
+    <form >
+        <div class="form-group">
+            <label for="username">نام کاربری</label>
+            <input type="text" id="username" name="username" 
+            [(ngModel)]="loginModel.username"
+                   placeholder="نام کاربری خود را وارد کنید" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">رمز عبور</label>
+            <input type="password" id="password" name="password" 
+                  [(ngModel)]="loginModel.password"
+                   placeholder="رمز عبور خود را وارد کنید" required>
+        </div>
+        
+        <button type="button" (click)="onLogin()" class="login-btn">ورود</button>
+    </form>
+</div>
